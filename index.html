@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erin Venize Timbol</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="cat.png" type="image/x-icon">
+</head>
+
+<body class="d-grid container-fluid vh-100 vw-100">
+    <audio control autoplay loop id="autoplay">
+        <source src="bg.mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <!--navbar-->
+    <div class="align-items-start d-flex justify-content-between mt-3">
+        <div>
+            <img src="cat.png" class="justify-self-start" width="50" alt="cat">
+        </div>
+        <div>
+            <button type="button" id="red">home</a></button>
+            <button type="button" id="yellow"><a href="about.html">aboutMe</a></button>
+            <button type="button" id="blue"><a href="interests.html">myInterests</a></button>
+        </div>
+    </div>
+
+    <!--main body-->
+    <div class="align-self-end mb-3 content--canvas">
+        <p class="greetings">// hello, User.</p>
+        <p class="greetings">// i am <span id="green">Erin Venize P. Timbol</span>, a computer science student
+            aiming to become an artificial intelligence engineer.</p>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="noise.min.js"></script>
+    <script src="util.js"></script>
+    <script src="coalesce.js"></script>
+    <script src="autoplay.js"></script>
+</body>
+
+</html>

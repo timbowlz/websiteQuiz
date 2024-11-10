@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'Dejavu Sans';
+    src: url('DejaVuSansMono-Oblique-webfont.eot');
+    src: url('DejaVuSansMono-Oblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('DejaVuSansMono-Oblique-webfont.woff2') format('woff2'),
+         url('DejaVuSansMono-Oblique-webfont.woff') format('woff'),
+         url('DejaVuSansMono-Oblique-webfont.ttf') format('truetype'),
+         url('DejaVuSansMono-Oblique-webfont.svg#dejavu_sans_monooblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Dejavu Sans Bold';
+    src: url('DejaVuSansMono-BoldOblique-webfont.eot');
+    src: url('DejaVuSansMono-BoldOblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('DejaVuSansMono-BoldOblique-webfont.woff2') format('woff2'),
+         url('DejaVuSansMono-BoldOblique-webfont.woff') format('woff'),
+         url('DejaVuSansMono-BoldOblique-webfont.ttf') format('truetype'),
+         url('DejaVuSansMono-BoldOblique-webfont.svg#dejavu_sans_monobold_oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Consolas';
+    font-size: 16px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 40px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 15px;
+}
+
+#yellow {
+    color: #e4bf45;
+}
+
+#blue {
+    color: #45bfe4;
+}
+
+#red {
+    color: #e4456d;
+}
+
+#purple {
+    color: #c245e4;
+}
+
+.greetings {
+    font-size: 40px;
+}
+
+#green {
+    color: #23cb39;
+}
+
+.header {
+    font-size: 50px;
+}
+
+#profile {
+    display: block;
+    margin: 0 auto;
+    width: 550px;
+}
+
+p:hover {
+    color: #23cb39;
+}
+
+#audio:hover {
+    fill: #23cb39;
+}
+
+.content--canvas canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.size {
+    display: block;
+    margin: 0 auto;
+    width: 1080px;
+}
+
+#autoplay {
+    opacity: 0%;
+}
+
+/* Tablet (up to 1024px wide) */
+@media (max-width: 1024px) {
+    button {
+      font-size: 25px;
+    }
+    .greetings {
+        font-size: 30px;
+    }
+    button:hover {
+        text-decoration-thickness: 10px;
+    }
+    #profile {
+        width: 400px;
+    }
+    .size {
+        width: 800px;
+    }
+  }
+  
+  /* Mobile (up to 767px wide) */
+  @media (max-width: 767px) {
+    button {
+      font-size: 14px;
+      margin-left: 2px;
+    }
+    .greetings {
+        font-size: 20px;
+    }
+    a:hover {
+        text-decoration-thickness: 5px;
+    }
+    #profile {
+        width: 250px;
+    }
+    .size {
+        width: 600px;
+    }
+  }
